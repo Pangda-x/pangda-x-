@@ -14,3 +14,9 @@
 原网站：https://personal-studio-nov09.whimsicalridge1.chatgpt.site
 
 这份仓库备份独立于聊天与 Sites 保存。未来网页更新需要再次提交到 GitHub；本次上传不建立自动同步。
+
+## GitHub Pages
+
+公开访问地址：https://pangda-x.github.io/pangda-x-/
+
+发布源是 `main` 分支的 `/docs` 目录，实际线上入口为 `docs/index.html`。修改网站时，请同时更新 `personal-website/dist/index.html` 和 `docs/index.html`。提交后 GitHub Pages 自动重新构建部署。Sites 的修改不会自动推送到此仓库。
