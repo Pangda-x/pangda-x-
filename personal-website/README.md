@@ -11,8 +11,6 @@
 
 下载本文件夹，用浏览器打开 `dist/index.html` 即可使用，无需安装或构建。使用文本编辑器修改该文件即可调整内容、样式和交互。
 
-原网站：https://personal-studio-nov09.whimsicalridge1.chatgpt.site
-
 这份仓库备份独立于聊天与 Sites 保存。未来网页更新需要再次提交到 GitHub；本次上传不建立自动同步。
 
 ## GitHub Pages
