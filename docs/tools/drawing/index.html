@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#11141b">
+<title>灵感画室 · PIGMENT STUDIO</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%231a2f2d'/%3E%3Cpath d='m10 29 4-12L27 6l7 7-12 13z' fill='%236be4c5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="core.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="brush" viewBox="0 0 24 24"><path d="m14 14 7-11-2-1-9 10 4 2ZM11 12c-6-1-3 7-8 8 7 3 12-3 8-8Z"/></symbol>
+<symbol id="pencil" viewBox="0 0 24 24"><path d="m4 16-1 5 5-1L21 7l-4-4L4 16Zm10-10 4 4M4 16l4 4"/></symbol>
+<symbol id="marker" viewBox="0 0 24 24"><path d="m7 15 9-12 5 4-9 12-5-4Zm1 1-4 1-2 4 6-2 1-2M14 6l5 4"/></symbol>
+<symbol id="highlight" viewBox="0 0 24 24"><path d="m8 14 7-11 6 4-7 11-6-4Zm0 0-4 3 7 4 3-3M2 22h20"/></symbol>
+<symbol id="spray" viewBox="0 0 24 24"><rect x="4" y="9" width="10" height="13" rx="2"/><path d="M7 9V5h5v4M9 5V2h5M16 4h.01M20 2h.01M20 6h.01M23 4h.01"/></symbol>
+<symbol id="eraser" viewBox="0 0 24 24"><path d="m3 14 10-11 8 7-10 11H7l-4-4v-3Zm5-5 8 7M11 21h11"/></symbol>
+<symbol id="dropper" viewBox="0 0 24 24"><path d="m14 3 7 7M13 7l4-4a2 2 0 0 1 3 3l-4 4M13 8 4 17l-1 4 4-1 9-9"/></symbol>
+<symbol id="fill" viewBox="0 0 24 24"><path d="m3 12 9-9 8 8-9 9-8-8ZM3 12h17M9 2v6M20 15s-3 3-3 5a3 3 0 0 0 6 0c0-2-3-5-3-5Z"/></symbol>
+<symbol id="gradient" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M6 4v16m3-16v16m3-16v16m4-16v16"/><path d="M6 5v14" stroke-width="3"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path d="M4 20 20 4"/><circle cx="4" cy="20" r="1"/><circle cx="20" cy="4" r="1"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 20 20 4M9 4h11v11"/></symbol>
+<symbol id="rect" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/></symbol>
+<symbol id="ellipse" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="8"/></symbol>
+<symbol id="polygon" viewBox="0 0 24 24"><path d="m12 2 10 7-4 12H6L2 9 12 2Z"/></symbol>
+<symbol id="text" viewBox="0 0 24 24"><path d="M3 7V3h18v4M12 3v18M7 21h10"/></symbol>
+<symbol id="select" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 11v2m18-2v2M11 3h2m-2 18h2"/></symbol>
+<symbol id="move" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M9 5l3-3 3 3M9 19l3 3 3-3M5 9l-3 3 3 3m14-6 3 3-3 3"/></symbol>
+<symbol id="crop" viewBox="0 0 24 24"><path d="M6 2v16h16M2 6h16v16"/></symbol>
+<symbol id="hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 0 1 4 0v6-7a2 2 0 0 1 4 0v8-6a2 2 0 0 1 4 0v7c0 6-3 9-7 9H9L3 13a2 2 0 0 1 3-2l2 2"/></symbol>
+<symbol id="zoom" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></symbol>
+<symbol id="undo" viewBox="0 0 24 24"><path d="m9 4-6 6 6 6M3 10h12a6 6 0 0 1 0 12"/></symbol>
+<symbol id="redo" viewBox="0 0 24 24"><path d="m15 4 6 6-6 6m6-6H9a6 6 0 0 0 0 12"/></symbol>
+<symbol id="plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+<symbol id="minus" viewBox="0 0 24 24"><path d="M4 12h16"/></symbol>
+<symbol id="folder" viewBox="0 0 24 24"><path d="M2 19V5a2 2 0 0 1 2-2h5l3 4h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="save" viewBox="0 0 24 24"><path d="M4 3h13l4 4v14H3V3h1ZM7 3v6h10V3M7 21v-8h10v8"/></symbol>
+<symbol id="export" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+<symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18m6-18v18M3 9h18M3 15h18"/></symbol>
+<symbol id="mirror" viewBox="0 0 24 24"><path d="M12 2v3m0 4v3m0 4v6M8 6 2 18h6V6Zm8 0 6 12h-6V6Z"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="eyeoff" viewBox="0 0 24 24"><path d="m3 3 18 18M10 5h2c6 0 10 7 10 7a20 20 0 0 1-4 5M6 6a20 20 0 0 0-4 6s4 7 10 7h3"/></symbol>
+<symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></symbol>
+<symbol id="unlock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0M12 14v3"/></symbol>
+<symbol id="up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+<symbol id="down" viewBox="0 0 24 24"><path d="m6 10 6 6 6-6"/></symbol>
+<symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+<symbol id="trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V3h8v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+<symbol id="fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><rect x="7" y="7" width="10" height="10" rx="1"/></symbol>
+<symbol id="help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 8a3 3 0 1 1 5 3c-1 1-2 1-2 3m0 3h.01"/></symbol>
+<symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="swap" viewBox="0 0 24 24"><path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/></symbol>
+</svg>
+
+<header class="app-header">
+  <div class="brand"><div class="brand-mark"><svg viewBox="0 0 32 32"><path d="m6 25 4-12L23 3l6 6-12 12-11 4Z" fill="currentColor"/><path d="m10 13 7 8M6 25l8-8" stroke="#16322d" stroke-width="2"/></svg></div><div><h1>灵感画室<span>.</span></h1><span class="brand-en">PIGMENT STUDIO</span></div><span class="beta">LOCAL</span></div>
+  <div class="document-info"><input id="document-name" aria-label="作品名称" maxlength="60" value="未命名作品"><span class="save-state" id="save-state"><i></i>本地画布</span></div>
+  <div class="header-actions"><button id="new-btn" class="quiet-button"><svg class="icon"><use href="#plus"/></svg><span>新建</span></button><button id="open-btn" class="quiet-button"><svg class="icon"><use href="#folder"/></svg><span>打开</span></button><span class="divider"></span><button id="save-btn" class="quiet-button"><svg class="icon"><use href="#save"/></svg><span>保存作品</span></button><button id="export-btn" class="accent-button"><svg class="icon"><use href="#export"/></svg><span>导出 PNG</span></button></div>
+</header>
+
+<div class="option-bar">
+  <div class="history-actions"><button id="undo-btn" class="icon-button" title="撤销 (Ctrl+Z)" aria-label="撤销" disabled><svg class="icon"><use href="#undo"/></svg></button><button id="redo-btn" class="icon-button" title="重做 (Ctrl+Shift+Z)" aria-label="重做" disabled><svg class="icon"><use href="#redo"/></svg></button></div>
+  <div class="tool-context"><span class="context-icon" id="context-icon"></span><strong id="tool-name">画笔</strong><span class="context-divider"></span><span id="tool-description">自由绘制，让灵感自然发生。</span></div>
+  <div class="context-options" id="shape-options" hidden><label><input id="shape-stroke" type="checkbox" checked>描边</label><label><input id="shape-fill" type="checkbox">填充</label><label id="sides-wrap" hidden>边数 <input id="polygon-sides" type="number" min="3" max="12" value="6"></label></div>
+  <div class="context-options" id="fill-options" hidden><label>容差 <input id="fill-tolerance" type="number" min="0" max="150" value="32"></label><label><input id="sample-all" type="checkbox" checked>采样所有图层</label></div>
+  <div class="context-options" id="gradient-options" hidden><label>类型 <select id="gradient-type"><option value="linear">线性渐变</option><option value="radial">径向渐变</option></select></label></div>
+  <div class="context-options" id="crop-options" hidden><button id="apply-crop" class="small-button">应用裁剪 ↵</button><button id="cancel-selection" class="small-button">取消 Esc</button></div>
+  <span class="bar-spacer"></span><button id="mirror-x" class="option-toggle" aria-pressed="false" title="左右镜像绘画"><svg class="icon"><use href="#mirror"/></svg><span>左右对称</span></button><button id="mirror-y" class="option-toggle" aria-pressed="false" title="上下镜像绘画"><svg class="icon rotate"><use href="#mirror"/></svg><span>上下对称</span></button><button id="grid-btn" class="icon-button" aria-pressed="false" title="切换辅助网格" aria-label="辅助网格"><svg class="icon"><use href="#grid"/></svg></button>
+</div>
+
+<div class="editor">
+  <aside class="tool-rail" aria-label="绘画工具">
+    <div id="tool-groups"></div>
+    <div class="rail-bottom"><button id="swap-colors" title="交换前景色与背景色 (X)" aria-label="交换颜色"><span id="secondary-chip"></span><span id="primary-chip"></span><svg class="icon"><use href="#swap"/></svg></button><button id="help-btn" class="icon-button" aria-label="操作指南" title="操作指南 (?)"><svg class="icon"><use href="#help"/></svg></button></div>
+  </aside>
+
+  <main class="canvas-area">
+    <div class="canvas-tab"><span class="tab-dot"></span><strong id="canvas-tab-name">未命名作品</strong><span id="canvas-tab-size">1280 × 800</span><span class="tab-format">RGB / 透明图层</span></div>
+    <div class="viewport-wrap"><canvas id="ruler-top" aria-hidden="true"></canvas><canvas id="ruler-left" aria-hidden="true"></canvas><div class="ruler-origin">PX</div>
+      <div id="viewport" tabindex="0" role="group" aria-label="绘图工作区，画笔拖动绘画，滚轮缩放，空格拖动画布">
+        <div id="paper"><canvas id="art-canvas" width="1280" height="800" aria-label="作品画布"></canvas><canvas id="overlay-canvas" width="1280" height="800" aria-hidden="true"></canvas><div id="empty-hint"><span class="empty-mark">✦</span><h2>让灵感，落在这里。</h2><p>选一支笔，画下你的第一笔。</p><span>YOUR CANVAS. YOUR POSSIBILITIES.</span></div></div>
+        <div id="brush-cursor" hidden></div>
+        <div class="canvas-tip" id="canvas-tip"><kbd>B</kbd> 画笔 <span>·</span><kbd>E</kbd> 橡皮 <span>·</span> 滚轮缩放 <span>·</span><kbd>Space</kbd> 拖动画布</div>
+        <div class="selection-actions" id="selection-actions" hidden><span id="selection-size"></span><button id="clear-selection" title="清除选区内像素">清除像素</button><button id="deselect-btn">取消选区</button></div>
+      </div>
+    </div>
+    <footer class="canvas-status"><span class="offline-dot"></span><span id="status-message">一切准备就绪，只差你的灵感。</span><span class="cursor-position" id="cursor-position">X —　Y —</span><div class="zoom-controls"><button id="zoom-out" aria-label="缩小" title="缩小 (-)">−</button><button id="zoom-label" title="恢复 100%">100%</button><button id="zoom-in" aria-label="放大" title="放大 (+)">+</button><span></span><button id="fit-btn" aria-label="适合窗口" title="适合窗口 (0)"><svg class="icon"><use href="#fit"/></svg></button></div></footer>
+  </main>
+
+  <aside class="inspector">
+    <section class="brush-panel"><div class="panel-heading"><h2>工具属性</h2><span class="panel-en">BRUSH LAB</span></div><div class="brush-preview"><canvas id="brush-preview" width="460" height="110" aria-label="当前笔刷效果预览"></canvas><span id="brush-preview-label">柔边圆头</span></div>
+      <div class="slider-control"><label for="size-range">大小 <span>SIZE</span></label><div class="number-unit"><input id="size-number" type="number" min="1" max="400" value="24" aria-label="笔刷大小">px</div><input id="size-range" type="range" min="1" max="200" value="24" aria-label="笔刷大小滑块"></div>
+      <div class="slider-control"><label for="hardness-range">硬度 <span>HARDNESS</span></label><div class="number-unit"><input id="hardness-number" type="number" min="0" max="100" value="85" aria-label="笔刷硬度">%</div><input id="hardness-range" type="range" min="0" max="100" value="85" aria-label="笔刷硬度滑块"></div>
+      <div class="slider-control"><label for="opacity-range">不透明度 <span>OPACITY</span></label><div class="number-unit"><input id="opacity-number" type="number" min="1" max="100" value="100" aria-label="笔刷不透明度">%</div><input id="opacity-range" type="range" min="1" max="100" value="100" aria-label="笔刷不透明度滑块"></div>
+      <div class="brush-extras"><label><input type="checkbox" id="smoothing" checked>平滑笔迹</label><label title="使用支持压感的数位笔时生效"><input type="checkbox" id="pressure" checked>压感大小</label></div>
+    </section>
+
+    <section class="color-panel"><div class="panel-heading"><h2>颜色</h2><button id="secondary-color-btn" class="tiny-button" title="点击设置渐变的第二种颜色">渐变尾色 <span id="second-dot"></span></button></div><div class="color-square" id="color-square" role="slider" tabindex="0" aria-label="颜色饱和度和亮度，左右调饱和度，上下调亮度"><span id="color-handle"></span></div><input id="hue-range" class="hue-range" type="range" min="0" max="359" value="164" aria-label="色相"><div class="color-fields"><label class="native-color-wrap" title="打开系统颜色选择器"><input id="native-color" type="color" value="#23b99b" aria-label="颜色选择器"></label><span class="hex-label">HEX</span><input id="hex-color" aria-label="十六进制颜色" value="#23B99B" maxlength="7" spellcheck="false"><button id="color-copy" class="icon-button" title="复制颜色代码" aria-label="复制颜色"><svg class="icon"><use href="#copy"/></svg></button></div><div class="swatches" id="swatches" aria-label="常用色板"></div><div class="recent-row"><span>最近使用</span><div id="recent-colors"></div></div></section>
+
+    <section class="layers-panel"><div class="panel-heading"><h2>图层 <span id="layer-count">2</span></h2><button id="add-layer" class="icon-button" title="新建图层" aria-label="新建图层"><svg class="icon"><use href="#plus"/></svg></button></div><div class="layer-opacity"><span>图层不透明度</span><input id="layer-opacity" type="range" min="0" max="100" value="100" aria-label="图层不透明度"><span id="layer-opacity-label">100%</span></div><div id="layer-list" role="list" aria-label="图层列表，从上到下排列"></div><div class="layer-actions"><button id="layer-up" class="icon-button" title="上移图层" aria-label="上移图层"><svg class="icon"><use href="#up"/></svg></button><button id="layer-down" class="icon-button" title="下移图层" aria-label="下移图层"><svg class="icon"><use href="#down"/></svg></button><button id="duplicate-layer" class="icon-button" title="复制图层" aria-label="复制图层"><svg class="icon"><use href="#copy"/></svg></button><button id="rename-layer" class="tiny-button">重命名</button><button id="delete-layer" class="icon-button danger" title="删除图层（可撤销）" aria-label="删除图层"><svg class="icon"><use href="#trash"/></svg></button></div></section>
+    <div class="inspector-foot"><span>✦</span> 每一笔，都有无限可能。</div>
+  </aside>
+</div>
+<input id="file-input" type="file" accept=".json,.png,.jpg,.jpeg,.webp,.gif" hidden><input id="secondary-native" type="color" value="#b8a3f4" hidden>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="new-dialog"><form method="dialog" id="new-form"><div class="dialog-header"><span class="panel-en">A FRESH START</span><button class="icon-button" value="cancel" formnovalidate aria-label="关闭"><svg class="icon"><use href="#close"/></svg></button></div><h2>新的画布，新的可能。</h2><p>选择适合灵感的尺寸。当前画布可通过撤销找回。</p><div class="presets"><button type="button" data-preset="1280,800" class="active">横向画布<span>1280 × 800</span></button><button type="button" data-preset="1080,1080">方形画布<span>1080 × 1080</span></button><button type="button" data-preset="1080,1920">竖向画布<span>1080 × 1920</span></button></div><div class="dimension-fields"><label>宽度 <input id="new-width" type="number" min="64" max="4096" value="1280" required></label><span>×</span><label>高度 <input id="new-height" type="number" min="64" max="4096" value="800" required></label></div><label class="dialog-label">画布背景 <select id="new-background"><option value="#ffffff">纯白</option><option value="#f7f4ec">暖纸色</option><option value="transparent">透明</option><option value="#17202e">深色</option></select></label><div class="dialog-footer"><span>最大 800 万像素</span><button value="create" class="accent-button">创建画布 <span>↗</span></button></div></form></dialog>
+<dialog id="text-dialog"><form method="dialog" id="text-form"><div class="dialog-header"><span class="panel-en">SAY IT YOUR WAY</span><button class="icon-button" value="cancel" formnovalidate aria-label="关闭"><svg class="icon"><use href="#close"/></svg></button></div><h2>给灵感配点文字。</h2><textarea id="text-content" rows="4" maxlength="3000" placeholder="输入文字，可换行…" required></textarea><div class="text-options"><label>字号 <input id="font-size" type="number" min="8" max="400" value="48"></label><select id="font-family" aria-label="字体"><option value="sans-serif">现代黑体</option><option value="serif">经典衬线</option><option value="monospace">等宽字体</option></select><label><input id="font-bold" type="checkbox">粗体</label></div><div class="dialog-footer"><span>文字将绘制到当前图层</span><button value="draw" class="accent-button">放入画布</button></div></form></dialog>
+<dialog id="rename-dialog"><form method="dialog" id="rename-form"><div class="dialog-header"><h2>图层重命名</h2><button class="icon-button" value="cancel" formnovalidate aria-label="关闭"><svg class="icon"><use href="#close"/></svg></button></div><input id="layer-name-input" maxlength="60" required aria-label="图层名称"><div class="dialog-footer"><span></span><button value="rename" class="accent-button">保存名称</button></div></form></dialog>
+<dialog id="help-dialog"><div class="dialog-header"><span class="panel-en">THE CREATIVE TOOLKIT</span><button id="help-close" class="icon-button" aria-label="关闭"><svg class="icon"><use href="#close"/></svg></button></div><h2>工具到位，随心发挥。</h2><div class="help-grid"><div><h3>绘画与颜色</h3><p>画笔、铅笔、马克笔、荧光笔和喷枪拥有不同笔触。硬度越低，笔触边缘越柔和。油漆桶默认采样所有可见图层，在当前图层填色。</p></div><div><h3>形状与编辑</h3><p>拖动绘制形状，按住 Shift 约束比例。选区限制绘画范围；移动工具移动选中区域或整个图层。裁剪后按 Enter 应用。</p></div></div><div class="shortcut-table"><span>画笔 / 橡皮 / 吸色 / 填色</span><span><kbd>B</kbd> <kbd>E</kbd> <kbd>I</kbd> <kbd>G</kbd></span><span>选区 / 移动 / 文字 / 裁剪</span><span><kbd>M</kbd> <kbd>V</kbd> <kbd>T</kbd> <kbd>C</kbd></span><span>撤销 / 重做</span><span><kbd>Ctrl Z</kbd> / <kbd>Ctrl Shift Z</kbd></span><span>缩放 / 平移 / 适合窗口</span><span>滚轮 / <kbd>Space</kbd> / <kbd>0</kbd></span><span>笔刷变小 / 变大</span><span><kbd>[</kbd> <kbd>]</kbd></span><span>保存工程 / 导出 PNG</span><span><kbd>Ctrl S</kbd> / <kbd>Ctrl Shift S</kbd></span></div><p class="help-note">作品自动暂存在本机当前浏览器。工程文件保留图层，可通过「打开」继续编辑；PNG 是合并后的图片。数位笔压感需要设备和浏览器支持。</p><button id="demo-btn" class="accent-button demo-button">加载示例，探索工具 <span>↗</span></button><p class="demo-note">示例会替换画布，可通过撤销回到你的作品。</p></dialog>
+</body>
+</html>
